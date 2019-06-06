@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Demo</title>
+</head>
+
+<body>
+    <!-- Select Basic -->
+    <div class="form-group d-flex justify-content-center">
+        <label class="col-md-4 control-label" for="selectbasic">Loại biểu đồ</label>
+        <div class="col-md-5 py-5">
+            <select id="selectbasic" name="selectbasic" class="form-control" onchange="changeFunc()">
+                <option value="1">Line</option>
+                <option value="2">Bar</option>
+                <option value="3">Radar</option>
+                <option value="4">Doughnut & Pie</option>
+                <option value="5">Polar Area</option>
+                <option value="6">Bubble</option>
+                <option value="7">Scatter</option>
+                <option value="8">Area</option>
+                <option value="9">Mixed</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row">
+        <canvas id="bieu-do"></canvas>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script type="text/javascript" src="/index.js"></script>
+</body>
+
+</html>
